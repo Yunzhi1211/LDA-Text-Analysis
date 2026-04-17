@@ -286,6 +286,7 @@ This project was developed as part of a **Rural Revitalization Research Initiati
 All participants, liaisons, coordinators, and corporate contributors to the survey; and Junyi Han, who led the LDA topic modeling analysis, providing crucial theoretical support and insightful perspectives on topical patterns in corporate survey data.
 
 ---
+## 📚 Version Information
 
 **Survey Period**: July 2023  
 **Report Completion**: September 2023  
