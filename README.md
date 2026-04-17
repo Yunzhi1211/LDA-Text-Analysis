@@ -282,14 +282,8 @@ This project was developed as part of a **Rural Revitalization Research Initiati
 **Advisors**:
 - Mao Shanjun, Cao Zhongyu
 
----
-
-## 📚 Version History
-
-- **📅 Last Updated**: April 2026
-- **🔄 Latest Version**: 1.0.0
-- To all survey participants, liaisons, coordinators, and contributing enterprises.
-- **Special Acknowledgement**: **Han Junyi*** led the LDA topic modeling analysis, providing critical theoretical support and in-depth insights into the topic patterns within the enterprise survey data.
+**Special Acknowledgements:**
+All participants, liaisons, coordinators, and corporate contributors to the survey; and Junyi Han, who led the LDA topic modeling analysis, providing crucial theoretical support and insightful perspectives on topical patterns in corporate survey data.
 
 ---
 
