@@ -62,6 +62,15 @@ python main.py
     └── lda_interactive.html      # Open this file to view visualization
 ```
 
+### 💻 View Online Interactive Visualization
+
+**[Click here to view the LDA interactive visualization online](https://yunzhi1211.github.io/LDA-Text-Analysis/lda_results.html)**
+
+The interactive HTML hosted on GitHub Pages allows you to:
+- 🔍 Explore topics interactively
+- 📊 View term-topic relationships
+- 🎯 Click on topics to see relevant terms
+
 ---
 
 ## 📁 Project Structure

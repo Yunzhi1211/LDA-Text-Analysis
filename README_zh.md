@@ -62,6 +62,15 @@ python main.py
     └── lda_interactive.html      # 打开此文件查看可视化
 ```
 
+### 💻 在线查看交互式可视化
+
+**[点击这里在线查看 LDA 交互式可视化](https://yunzhi1211.github.io/LDA-Text-Analysis/lda_results.html)**
+
+通过 GitHub Pages 托管的交互式HTML可以让您：
+- 🔍 交互式浏览主题
+- 📊 查看词汇-主题关系
+- 🎯 点击主题查看相关词汇
+
 ---
 
 ## 📁 项目结构
