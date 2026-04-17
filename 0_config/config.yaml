@@ -1,0 +1,46 @@
+# ========== 文件路径配置 ==========
+paths:
+  input_dir: "1_input"
+  output_dir: "2_output"
+  model_dir: "2_output/lda_model"
+  viz_dir: "2_output/visualizations"
+
+# ========== 文本提取配置 ==========
+extraction:
+  file_format: ".docx"
+  encoding: "utf-8"
+
+# ========== 数据预处理配置 ==========
+preprocessing:
+  min_word_length: 2
+  max_word_length: 20
+  max_df: 0.85
+  min_df: 2
+  use_stopwords: True
+  stopwords_file: None
+
+# ========== LDA模型配置 ==========
+lda:
+  num_topics: 5
+  passes: 10
+  iterations: 100
+  per_word_topics: true
+  random_state: 42
+  alpha: "auto"
+  eta: "auto"
+
+# ========== 可视化配置 ==========
+visualization:
+  generate_interactive_html: True
+  num_top_words: 10
+  generate_wordcloud: False
+  generate_heatmap: True
+  save_format: "png"
+
+# ========== 输出配置 ==========
+output:
+  save_model: True
+  save_processed_texts: False
+  save_dictionary: False
+  save_results_json: True
+  verbose: True
