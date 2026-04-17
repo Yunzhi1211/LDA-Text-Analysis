@@ -205,32 +205,16 @@ Results visualization
 
 ---
 
-## 🛠️ FAQ
+## 🛠️ Troubleshooting
 
-### Q1: Error "UnicodeDecodeError"
-
-**Solution**: Check DOCX file encoding, ensure it's UTF-8 format
-
-### Q2: Poor jieba tokenization
-
-**Solution**: Add custom vocabulary in 4_scripts/1_preprocessing.py:
-
-```python
-import jieba
-jieba.load_userdict('my_dict.txt')  # Custom vocabulary
-```
-
-### Q3: Too many/few topics
-
-**Solution**: Adjust `num_topics` in `0_config/config.yaml`
-
-### Q4: Slow execution
-
-**Solution**: Reduce `passes` and `iterations` parameters
-
-### Q5: Out of memory
-
-**Solution**: Increase `min_df` or decrease `max_df` to reduce vocabulary size
+| Problem | Solution |
+|---------|----------|
+| `UnicodeDecodeError` when running | Ensure DOCX files are UTF-8 encoded |
+| Poor Chinese tokenization quality | Add domain vocabulary in `4_scripts/1_preprocessing.py` |
+| Topics are too similar or dispersed | Adjust `num_topics` in `0_config/config.yaml` |
+| Slow execution | Reduce `passes` and `iterations` parameters |
+| Out of memory error | Increase `min_df` or decrease `max_df` to reduce vocabulary |
+| HTML not displaying correctly | Clear browser cache and refresh page |
 
 ---
 
@@ -259,45 +243,51 @@ Then run `python main.py` multiple times to compare results.
 
 ---
 
+## 📦 Repository Structure
 
-```
+**Included in GitHub** ✅
+- `4_scripts/` - All processing scripts
+- `0_config/` - Configuration template
+- `2_output/lda_results.json` - Anonymized results
+- `2_output/visualizations/` - Visualization charts
+- `docs/` - GitHub Pages files
+- README files, requirements.txt
 
-### Files to Include on GitHub
-
-✅ `src/` - All code  
-✅ `0_config/` - Configuration template  
-✅ `2_output/lda_results.json` - Anonymized results  
-✅ `2_output/visualizations/` - Charts  
-✅ README.md, requirements.txt  
-
-❌ `1_input/` - Raw data (privacy)  
-❌ `lda_analysis.log` - Runtime log  
+**Excluded by .gitignore** ❌
+- `1_input/` - Raw DOCX survey data (privacy protection)
+- `3_log/` - Runtime logs (auto-generated)
+- `__pycache__/` - Python cache files
 
 ---
 
 ## 📄 License
 
-MIT License - Free to use, modify, and distribute code and anonymized results
+MIT License - Free to use, modify, and distribute the code and anonymized results
 
 ---
 
-## 👥 Contributors
+## 🙏 Credits
 
-### Core Team
+This project was developed as part of a **Rural Revitalization Research Initiative**.
 
-This project was developed as part of the **Rural Revitalization Research Initiative**. Key contributions:
+**Project Development**:
+- Han Junyi (Lead - LDA Topic Analysis) 🌟
 
-| Role | Contributors |
-|:---|:---|
-| **LDA Topic Analysis** (Lead Contributor) | **Han Junyi** 🌟 |
-| Data Analysis & Research | Han Junyi, Hao Jiarui, Yue Wenjie, Wu Yinuo |
-| Investigation & Interviews | Jiang Yunzhi, Zhang Wenying, Liu Qinyan, Zhang Pingping, Li Xiayi, Li Hanjie, Xia Ying |
-| Publicity & Support | Jiang Mengyu, Cao Yuting, Tan Tingting, Li Yuexing, Deng Yunran |
+**Data Analysis & Research**:
+- Han Junyi, Hao Jiarui, Yue Wenjie, Wu Yinuo
 
+**Research & Field Investigation**:
+- Jiang Yunzhi, Zhang Wenying, Liu Qinyan, Zhang Pingping, Li Xiayi, Li Hanjie, Xia Ying
 
-### Acknowledgements
+**Advisors**:
+- Mao Shanjun, Cao Zhongyu
 
-- **Advisors**: Mao Shanjun, Cao Zhongyu
+---
+
+## 📚 Version History
+
+- **📅 Last Updated**: April 2026
+- **🔄 Latest Version**: 1.0.0
 - To all survey participants, liaisons, coordinators, and contributing enterprises.
 - **Special Acknowledgement**: **Han Junyi*** led the LDA topic modeling analysis, providing critical theoretical support and in-depth insights into the topic patterns within the enterprise survey data.
 
